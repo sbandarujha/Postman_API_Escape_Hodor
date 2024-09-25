@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "861a37ea-421b-42e3-a441-8ceb1a9ae4d8",
+		"name": "Demo_Postman_GitHub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CatFacts",
+			"id": "a911cebc-5d4b-410b-93c2-9a692d2b4f5a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "/* List all dog breeds.Added extra comment */",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://cat-fact.herokuapp.com/{{variable1}}/"
+			},
+			"response": []
+		},
+		{
+			"name": "DogBreeds",
+			"id": "8375ba90-4948-496c-8c91-3469eecfbce5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "/* List all dog breeds. */",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dog.ceo/api/breeds/list/{{variable2}}"
+			},
+			"response": []
+		}
+	]
+}
