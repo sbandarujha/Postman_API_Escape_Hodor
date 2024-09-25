@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "f510629f-555d-41c7-b43c-4fa03d4248a9",
+		"name": "Demo_Postman_GitHub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29569794"
+	},
+	"item": [
+		{
+			"name": "CatFacts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "/* List all dog breeds. */",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cat-fact.herokuapp.com/{{variable1}}/",
+					"protocol": "https",
+					"host": [
+						"cat-fact",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"{{variable1}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DogBreeds",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "/* List all dog breeds. */",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dog.ceo/api/breeds/list/{{variable2}}",
+					"protocol": "https",
+					"host": [
+						"dog",
+						"ceo"
+					],
+					"path": [
+						"api",
+						"breeds",
+						"list",
+						"{{variable2}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
